@@ -1,5 +1,7 @@
-# sentry
+# sentry 9.1.2
 Sentry environment
+
+One of the last lightweight sentry service
 
 Before launching Sentry you should make `.env` from `.env.sample` and fill out the credentials inside the `.env` file.
 
