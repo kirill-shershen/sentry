@@ -11,7 +11,7 @@ To launch Sentry run the command:
 
 ```
 docker-compose up -d
-docker-compose exec -ti web upgrade
+docker-compose exec -ti web sentry upgrade
 docker-compose exec -ti web pip install sentry-plugins
 docker-compose restart
 ```
