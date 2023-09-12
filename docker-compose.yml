@@ -55,18 +55,18 @@ services:
       - postgres
     command: sentry run worker
 
-  nginx:
-    restart: unless-stopped
-    ports:
-      - "80:80/tcp"
-    image: "nginx:1.25.1-alpine"
-    volumes:
-      - type: bind
-        read_only: true
-        source: ./nginx
-        target: /etc/nginx
-    depends_on:
-      - web
+  # nginx:
+  #   restart: unless-stopped
+  #   ports:
+  #     - "80:80/tcp"
+  #   image: "nginx:1.25.1-alpine"
+  #   volumes:
+  #     - type: bind
+  #       read_only: true
+  #       source: ./nginx
+  #       target: /etc/nginx
+  #   depends_on:
+  #     - web
 
 volumes:
   postgres: {}
